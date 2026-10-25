@@ -1,0 +1,36 @@
+{
+    "dependencies":  {
+                         "@ffmpeg/ffmpeg":  "^0.12.15",
+                         "@ffmpeg/util":  "^0.12.2",
+                         "next":  "^15.5.4",
+                         "react":  "^19.1.1",
+                         "react-dom":  "^19.1.1"
+                     },
+    "description":  "KlipAI — AI Video Clipper: upload video, potong jadi klip vertikal 9:16 bersubtitle",
+    "devDependencies":  {
+                            "@types/node":  "^22.10.2",
+                            "@types/react":  "^19.1.4",
+                            "@types/react-dom":  "^19.1.4",
+                            "autoprefixer":  "^10.4.20",
+                            "eslint":  "^9.39.5",
+                            "eslint-config-next":  "^15.5.4",
+                            "postcss":  "^8.4.49",
+                            "tailwindcss":  "^3.4.17",
+                            "typescript":  "^5.7.3"
+                        },
+    "name":  "klipai",
+    "private":  true,
+    "scripts":  {
+                    "build":  "next build",
+                    "dev":  "next dev",
+                    "fetch-assets":  "node scripts/fetch-assets.mjs",
+                    "lint":  "eslint .",
+                    "start":  "next start",
+                    "typecheck":  "tsc --noEmit",
+                    "check":  "npm run lint \u0026\u0026 npm run typecheck \u0026\u0026 npm run build"
+                },
+    "version":  "0.1.0",
+    "engines":  {
+                    "node":  "\u003e=20.19.0"
+                }
+}
